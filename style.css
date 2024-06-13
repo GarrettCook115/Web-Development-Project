@@ -1,6 +1,10 @@
-img{
+/*image border style*/
+.img{
     border:black;
+    object-fit:none;
+    object-position:right top;
 }
+/*entire page/html page style*/
 html{
     margin:auto;
     width:100%;
@@ -8,27 +12,28 @@ html{
     font-style:italic;
     background:silver;
     text-align:center;}
-
+/*id style*/
 #changeMe {
         margin:auto;
-        width:230px;
-        height:150px;
+        width:500px;
+        height:230px;
         border:3px solid black;
         padding:2px;
         background:black;
         overflow:scroll;
         font-style:normal;
-        text-align:center;
 
-        }
+     }
 
 
+
+/*body style*/
 body{
 
     align-items:center;
     text-align:center;
     }
-
+/*paragraph element style*/
 p{
     margin:auto;
     width:230px;
@@ -38,5 +43,5 @@ p{
     background:white;
     overflow:scroll;
     font-style:normal;
-    text-align:center;
+
     }

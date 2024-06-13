@@ -1,4 +1,4 @@
-
+/*Incorporates the entirety of emailvalidation page's style, unless changed internally */
 a,body{
     text-align:center;
 }
@@ -12,13 +12,18 @@ img{
     position:50px 30px;
 
     }
-    html{
+    /*webpage background*/
+html{
     background:silver;
 }
-
+/*button color*/
 button{
     margin:0;
+    width:40px
+    height:40px;
     align-items:center;
+    background:white;
+    border:solid black;
 }
 
 
@@ -44,12 +49,12 @@ font-family:'poppins','sans-serif';
     position:relative;
 
 }
-
+/*adjustments to "email-field" id text,font and styling. Same with label,and error.*/
 #email-field{
     display:block;
     width:100%;
     border:0;
-    border-bottom:2px solid #555;
+    border-bottom:2px solid black;
     background:transparent;
     outline:none;
     font-size: 26px;

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang ="en">
     <head>
+        <!--Adjusts format of webpage to mobile devices-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Email Me Here</title>
     <title>Email Contact Validation</title>  
     <link href ="style2.css" rel ="stylesheet">    
@@ -11,9 +12,12 @@
 <h2>Email</h2>
 <a href ="Page2.html" >Aboutme</a>
 <a href="index.html">Home</a><br>
+    <!--Links button to my email"redirects depending on user's email app-->
 <a href ="mailto:GCook28@students.kennesaw.edu">
 <button class ="button">Click to Email Me</button></a>
-<div class ="hero">
+
+    <p style="font-weight:bold">Make sure you check your email for validity below before clicking submit. </p>
+    <div class ="hero">
     <div class ="input-group">         
     <label id="email-label">Email</label>
     <input type="email" spellcheck="false" id ="email-field" onkeyup="validateEmail()">
@@ -28,6 +32,7 @@
     
         function validateEmail(){
             emailLabel.style.bottom="45px";
+<!--tests validity of email depending on characters utilized.If correct will turn green,if not error will inform you.-->
 
         if(!emailField.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)){
             emailError.innerHTML = "Please enter a Valid Email.";
@@ -37,7 +42,7 @@
         }
     
            
-            emailError.innerHTML="Valid email-Click submit Link Above:";
+            emailError.innerHTML="Valid Email-Click the Button Above:";
             emailField.style.borderBottomColor="green";
             emailError.style.top="100%";
 

@@ -1,3 +1,4 @@
+//Previous code used for a earlier iteration of page3/contact page//
 
 const emailInput = document.querySSelector("input[name='email");
 const messageInput = document.querySelector("textarea['name=message']");
