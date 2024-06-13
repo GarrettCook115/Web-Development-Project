@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Email Me Here</title>
+    <title>Email Contact Validation</title>  
+    <link href ="style2.css" rel ="stylesheet">    
+                  
+</head>
+<body>
+    <h1 style = "text-align:center;">Contact Information</h1>
+<h2>Email</h2>
+<a href ="Page2.html" >Aboutme</a>
+<a href="index.html">Home</a><br>
+<a href ="mailto:GCook28@students.kennesaw.edu">
+<button class ="button">Click to Email Me</button></a>
+<div class ="hero">
+    <div class ="input-group">         
+    <label id="email-label">Email</label>
+    <input type="email" spellcheck="false" id ="email-field" onkeyup="validateEmail()">
+    <span id="email-error">error msg</span>
+    </div>
+</div>
+    <script>
+   
+        var emailField =document.getElementById("email-field");
+        var emailLabel =document.getElementById("email-label");
+        var emailError =document.getElementById("email-error");
+    
+        function validateEmail(){
+            emailLabel.style.bottom="45px";
+
+        if(!emailField.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)){
+            emailError.innerHTML = "Please enter a Valid Email.";
+            emailField.style.borderBottomColor="red";
+            emailError.style.top ="120%";
+            return false;
+        }
+    
+           
+            emailError.innerHTML="Valid email-Click submit Link Above:";
+            emailField.style.borderBottomColor="green";
+            emailError.style.top="100%";
+
+    return true; 
+    }
+    
+</script>
+</body>
+</html>

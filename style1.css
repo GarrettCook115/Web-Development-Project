@@ -10,9 +10,10 @@ img{
 
             }
 
-body,p1{
+body{
     align-items:center;
     text-align:center;
     font-style:normal;
     margin:auto;
     }
+}

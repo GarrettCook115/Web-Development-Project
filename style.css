@@ -1,3 +1,6 @@
+img{
+    border:black;
+}
 html{
     margin:auto;
     width:100%;
@@ -30,7 +33,7 @@ p{
     margin:auto;
     width:230px;
     height:120px;
-    border:3px solid gold;
+    border:3px solid Black;
     padding:2px;
     background:white;
     overflow:scroll;
