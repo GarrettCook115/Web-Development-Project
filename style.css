@@ -8,12 +8,14 @@ html{
 
 #changeMe {
         margin:auto;
-        width:200px;
+        width:230px;
         height:150px;
         border:3px solid black;
         padding:2px;
         background:black;
         overflow:scroll;
+        font-style:normal;
+        text-align:center;
 
         }
 
@@ -27,11 +29,11 @@ body{
 p{
     margin:auto;
     width:230px;
-    height:70px;
+    height:120px;
     border:3px solid gold;
     padding:2px;
     background:white;
     overflow:scroll;
     font-style:normal;
-    text-align:left;
+    text-align:center;
     }
