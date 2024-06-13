@@ -13,4 +13,4 @@ Contributing: Any tips would be great as this is my first time creating a webpag
 License: Intellij, Visual Studio utilized for IDE. 
 
 link: https://github.com/GarrettCook115/Web-Development-Project.git
-Pages: 
+Pages: https://garrettcook115.github.io/Web-Development-Project/
