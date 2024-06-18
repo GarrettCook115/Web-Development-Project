@@ -1,8 +1,8 @@
 /*image border style*/
 .img{
     border:black;
-    object-fit:none;
-    object-position:right top;
+    text-align:center;
+    margin:Auto;
 }
 /*entire page/html page style*/
 html{
@@ -22,6 +22,8 @@ html{
         background:black;
         overflow:scroll;
         font-style:normal;
+        text-align:left;
+        display:flex;
 
      }
 
