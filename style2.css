@@ -19,11 +19,11 @@ html{
 /*button color*/
 button{
     margin:0;
-    width:40px
+    width:40px;
     height:40px;
     align-items:center;
     background:white;
-    border:solid black;
+    border:black;
 }
 
 
