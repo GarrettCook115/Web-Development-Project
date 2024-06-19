@@ -17,10 +17,10 @@ html{
     background:silver;
 }
 /*button color*/
-button{
+.button{
     margin:0;
     width:40px;
-    height:40px;
+    height:60px;
     align-items:center;
     background:white;
     border:black;

@@ -5,7 +5,7 @@ const errorElement = document.getElementById('error')
 
 form.addEventListener('submit',(e)=> {
     let messages =[]
-    if(Name.value === '' || Name.value ==null){
+    if(navigatorame.value === '' || name.value ==null){
         messages.push('Name is required')
     }
 

@@ -4,6 +4,7 @@
         <!--Adjusts format of webpage to mobile devices-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Email Me Here</title>
     <title>Email Contact Validation</title>  
+    
     <link href ="style2.css" rel ="stylesheet">    
                   
 </head>
@@ -12,11 +13,28 @@
 <h2>Email</h2>
 <a href ="Page2.html" >Aboutme</a>
 <a href="index.html">Home</a><br>
-    <!--Links button to my email"redirects depending on user's email app-->
-<a href ="mailto:GCook28@students.kennesaw.edu">
-<button class ="button">Click to Email Me</button></a>
+<div id = 'error'></div><br>
+<!--creates a form submission for each field, name,email and message-->
+<form id = 'form' action = "" action method ="GET">
+    <div> 
+        <label for ="name">Name</label>
+        <input id ="name" name ="name" type = "text" required>
+</div>
+<div>
+    <label for ="email">Email</label>
+    <input id ="email" name ="email" type = "email">
+</div>
 
-    <p style="font-weight:bold">Make sure you check your email for validity below before clicking submit. </p>
+<label for ="message">Message</label>
+<!--text area will hold a box of typed/prewritten text.Just like writting text inside a box-->
+<textarea id ="message" name="message" required></textarea>
+
+    <!--Links button to my email"redirects depending on user's email app-->
+<button>Submit</button>
+<a href ="mailto:GCook28@students.kennesaw.edu">Click to Email Me</a>
+
+
+    <p style="font-weight:bold">Make sure you check your email for validity below before clicking the <em>"click to Email Me"</em>link. </p>
     <div class ="hero">
     <div class ="input-group">         
     <label id="email-label">Email</label>
@@ -24,6 +42,8 @@
     <span id="email-error">error msg</span>
     </div>
 </div>
+
+<!--Below script checks if the email meets all the requested requirements before entering.-->
     <script>
    
         var emailField =document.getElementById("email-field");
@@ -32,7 +52,6 @@
     
         function validateEmail(){
             emailLabel.style.bottom="45px";
-<!--tests validity of email depending on characters utilized.If correct will turn green,if not error will inform you.-->
 
         if(!emailField.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)){
             emailError.innerHTML = "Please enter a Valid Email.";
