@@ -11,6 +11,7 @@ app.get('/', (req, res) => {
 app.post('/submit-form', (req, res) => {
     const username = req.body.username; // access form data
     // Add validation logic here
+    const email = req.body.email;
     res.send(`Username is $gcook28`);
 });
 
